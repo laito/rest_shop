@@ -1,0 +1,12 @@
+<center>
+<h3>Books</h3>
+<table>
+  <% @books.each do |book| %>
+	<tr>
+		<td><%=book.name%></td>
+		<td><%=book.author%></td>
+		<td><a href="/shop/<%=book.id%>">Link</a></td>
+	</tr>
+  <% end %>
+</table>
+</center>

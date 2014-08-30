@@ -1,0 +1,11 @@
+<center>
+  <h2><%=@book.name%></h2>
+  <h4>- by <%=@book.author%></h4>
+  <% if @book.sold %>
+    Sold Out! 
+  <% else %>
+    <a href="/shop/<%=@book.id%>/buy">Buy!</a>
+  <% end %>
+  <br /><br />
+  <a href="/">Go back to the listing</a>
+</center>
